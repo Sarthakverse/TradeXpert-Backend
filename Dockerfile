@@ -4,5 +4,5 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build target/TradeXpert-0.0.1-SNAPSHOT.jar TradeXpert.jar
-EXPOSE 5454
+EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "TradeXpert.jar"]
