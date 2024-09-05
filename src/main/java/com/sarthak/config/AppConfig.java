@@ -90,7 +90,7 @@ public class AppConfig {
                         "http://localhost:5173",
                         "http://localhost:5174",
                         "http://localhost:4200",
-                        "https://tradexpert-backend.onrender.com/"
+                        "https://tradexpert-backend.onrender.com"
                 ));
                 cfg.setAllowedMethods(Collections.singletonList("*"));
                 cfg.setAllowCredentials(true);
