@@ -31,13 +31,6 @@ public class CoinServiceImpl implements CoinService {
     @Autowired
     private ObjectMapper objectMapper;
 
-
-
-//    @Value("${coingecko.api.key}")
-//    private String API_KEY;
-
-
-
     @Override
     public List<Coin> getCoinList(int page) throws Exception {
         String url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=10&page="+page;
@@ -47,7 +40,7 @@ public class CoinServiceImpl implements CoinService {
         try {
 
             HttpHeaders headers = new HttpHeaders();
-//            headers.set("x-cg-demo-api-key", API_KEY);
+
 
 
             HttpEntity<String> entity = new HttpEntity<>("parameters", headers);
@@ -73,7 +66,7 @@ public class CoinServiceImpl implements CoinService {
         RestTemplate restTemplate = new RestTemplate();
         try {
             HttpHeaders headers = new HttpHeaders();
-//            headers.set("x-cg-demo-api-key", API_KEY);
+
 
             HttpEntity<String> entity = new HttpEntity<>("parameters", headers);
 
@@ -109,7 +102,7 @@ public class CoinServiceImpl implements CoinService {
 
         System.out.println("------------------ get coin details base url "+baseUrl);
         HttpHeaders headers = new HttpHeaders();
-//        headers.set("x-cg-demo-api-key", API_KEY);
+
 
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
@@ -162,7 +155,6 @@ public class CoinServiceImpl implements CoinService {
         String baseUrl ="https://api.coingecko.com/api/v3/search?query="+keyword;
 
         HttpHeaders headers = new HttpHeaders();
-//        headers.set("x-cg-demo-api-key", API_KEY);
 
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
@@ -182,7 +174,6 @@ public class CoinServiceImpl implements CoinService {
         RestTemplate restTemplate = new RestTemplate();
         try {
             HttpHeaders headers = new HttpHeaders();
-//            headers.set("x-cg-demo-api-key", API_KEY);
 
             HttpEntity<String> entity = new HttpEntity<>("parameters", headers);
 
@@ -205,7 +196,6 @@ public class CoinServiceImpl implements CoinService {
         RestTemplate restTemplate = new RestTemplate();
         try {
             HttpHeaders headers = new HttpHeaders();
-//            headers.set("x-cg-demo-api-key", API_KEY);
 
             HttpEntity<String> entity = new HttpEntity<>("parameters", headers);
 
