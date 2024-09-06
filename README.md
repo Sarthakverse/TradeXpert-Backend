@@ -35,6 +35,8 @@ So, I developed a full-stack crypto trading platform that allows users to trade 
 - `Buy and sell`
 
 # *Screenshots*
+
+![image](https://github.com/user-attachments/assets/5184d299-2b5b-4917-b28f-189ba5ec34c5)
 ![image](https://github.com/user-attachments/assets/35c3c859-03ef-46e8-892f-11433cd79031)
 ![image](https://github.com/user-attachments/assets/980bf1f9-34fe-4c15-8bf6-ac3b6c1068cd)
 ![image](https://github.com/user-attachments/assets/d7c8b567-b8aa-4a25-b6c7-cdc6e3242610)
