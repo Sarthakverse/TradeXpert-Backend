@@ -91,7 +91,8 @@ public class AppConfig {
                         "http://localhost:5174",
                         "http://localhost:4200",
                         "https://tradexpert-backend.onrender.com",
-                        "http://localhost:8080"
+                        "http://localhost:8080",
+                        "https://tradexpert.netlify.app/"
                 ));
                 cfg.setAllowedMethods(Collections.singletonList("*"));
                 cfg.setAllowCredentials(true);
