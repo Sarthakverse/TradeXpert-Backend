@@ -3,6 +3,7 @@ package com.sarthak.service;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.sarthak.model.Coin;
 
+import java.io.IOException;
 import java.util.List;
 
 
@@ -11,7 +12,7 @@ public interface CoinService {
 
     String getMarketChart(String coinId,int days) throws Exception;
 
-    String getCoinDetails(String coinId) throws JsonProcessingException;
+    String getCoinDetails(String coinId) throws IOException;
 
     Coin findById(String coinId) throws Exception;
 

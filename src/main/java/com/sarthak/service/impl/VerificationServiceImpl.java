@@ -21,6 +21,11 @@ public class VerificationServiceImpl implements VerificationService {
     @Override
     public VerificationCode sendVerificationOTP(User user, VerificationType verificationType) {
 
+        VerificationCode existingCode = verificationRepository.findByUserId(user.getId());
+        if (existingCode != null) {
+            verificationRepository.delete(existingCode); // Delete the existing OTP if any
+        }
+
         VerificationCode verificationCode = new VerificationCode();
 
         verificationCode.setOtp(OtpUtils.generateOTP());
