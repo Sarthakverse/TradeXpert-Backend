@@ -34,6 +34,33 @@ So, I developed a full-stack crypto trading platform that allows users to trade 
 - `real time graph`
 - `Buy and sell`
 
+# *Screenshots*
+![image](https://github.com/user-attachments/assets/35c3c859-03ef-46e8-892f-11433cd79031)
+![image](https://github.com/user-attachments/assets/980bf1f9-34fe-4c15-8bf6-ac3b6c1068cd)
+![image](https://github.com/user-attachments/assets/d7c8b567-b8aa-4a25-b6c7-cdc6e3242610)
+![image](https://github.com/user-attachments/assets/315957b5-fa7c-4136-9499-545a32b42b18)
+![image](https://github.com/user-attachments/assets/2b2e8160-a867-4286-8bf4-4e4779716b26)
+![image](https://github.com/user-attachments/assets/c687c9eb-3194-4e27-9255-d9758f80d2bd)
+![image](https://github.com/user-attachments/assets/f80cb8a1-d7ad-41b5-88a5-53718b14bd8e)
+![image](https://github.com/user-attachments/assets/889bcdde-5741-4e30-8231-4ea5ef39b4a2)
+![image](https://github.com/user-attachments/assets/92a5400a-ae6c-4df8-9aa9-72b81a91c5af)
+![image](https://github.com/user-attachments/assets/d8aa246d-971a-429f-8e3f-cd893f383aa6)
+![image](https://github.com/user-attachments/assets/e77699f0-8e1f-4a4e-bebd-2126b670209a)
+![image](https://github.com/user-attachments/assets/6f07875b-770d-4f06-99d6-3573792fd9c5)
+![image](https://github.com/user-attachments/assets/78a68a37-b8e5-4a65-b0ac-1a686d964c51)
+
+
+
+
+
+
+
+
+
+
+
+
+
 # *Entities*
 
 ```
