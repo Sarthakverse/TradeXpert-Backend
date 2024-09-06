@@ -27,6 +27,7 @@ import org.springframework.security.oauth2.client.authentication.OAuth2Authentic
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 
 @RestController
 @RequestMapping("/auth")
@@ -104,7 +105,7 @@ public class AuthController {
     }
 
     @PostMapping("/signin")
-    public ResponseEntity<AuthResponse> signing(@RequestBody LoginRequest loginRequest) throws UserException, MessagingException {
+    public ResponseEntity<AuthResponse> signing(@RequestBody LoginRequest loginRequest) throws UserException, MessagingException, UnsupportedEncodingException {
 
         String username = loginRequest.getEmail();
         String password = loginRequest.getPassword();
@@ -127,6 +128,7 @@ public class AuthController {
             String otp= OtpUtils.generateOTP();
 
             TwoFactorOTP oldTwoFactorOTP=twoFactorOtpService.findByUser(user.getId());
+
             if(oldTwoFactorOTP!=null){
                 twoFactorOtpService.deleteTwoFactorOtp(oldTwoFactorOTP);
             }
